@@ -17,12 +17,12 @@
         </ul>
       </div>
       <div class='content' id='{{parentId}}_{{nickname}}_content' style='display:none'>
-        {{#if deprecated}}
+        <!--{{#if deprecated}}
             <h4>Warning: Deprecated</h4>
-        {{/if}}
+        {{/if}}-->
         {{#if description}}
         <h4>Implementation Notes</h4>
-        <p>{{{description}}}</p>
+        <p class="implementationNote">{{{description}}}</p>
         {{/if}}
         {{#oauth}}
         <div class="auth">

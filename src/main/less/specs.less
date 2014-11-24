@@ -4,9 +4,9 @@
 
     line-height: 1;
     font-family: "Droid Sans", sans-serif;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+//    max-width: 960px;
+    margin-left: 50px;
+    margin-right: 50px;
 
     b, strong {
         font-family: "Droid Sans", sans-serif;
@@ -259,6 +259,7 @@
             color: #555;
         }
         .snippet {
+            overflow-y: scroll;
             small {
                 font-size: 0.75em;
             }
@@ -267,9 +268,13 @@
             font-style: italic;
         }
         .description {
+            padding: 0 0 0 10px;
+//            border-color: #808080;
+            border-style: dotted;
+            border-width: thin;
             .strong {
                 font-weight: bold;
-                color: #000;
+                color: #000000;
                 font-size: .9em;
             }
             div {
@@ -565,7 +570,7 @@
                             clear: both;
                             overflow: hidden;
                             display: block;
-                            margin: 0 0 10px;
+                            margin: 0 0 10px 25px;
                             padding: 0;
                             div.heading {
                                 float: none;
@@ -659,7 +664,10 @@
                                 h4 {
                                     font-size: 1.1em;
                                     margin: 0;
-                                    padding: 15px 0 5px;
+                                    padding: 5px 0 5px;
+                                }
+                                .implementationNote {
+                                    font-weight: bold;
                                 }
                                 div.sandbox_header {
                                     float: none;
