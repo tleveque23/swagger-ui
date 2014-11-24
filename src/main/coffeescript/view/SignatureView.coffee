@@ -12,6 +12,7 @@ class SignatureView extends Backbone.View
     $(@el).html(template(@model))
 
     @switchToSnippet()
+#    @switchToDescription()
 
     @isParam = @model.isParam
 

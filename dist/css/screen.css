@@ -262,8 +262,10 @@
 }
 .swagger-section .swagger-ui-wrap .content pre {
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 0px;
   padding: 5px;
+  border-style: dotted;
+  border-width: thin;
 }
 .swagger-section .swagger-ui-wrap .icon-btn {
   cursor: pointer;
@@ -371,7 +373,10 @@
   color: #555;
 }
 .swagger-section .swagger-ui-wrap .model-signature .snippet {
-  overflow-y: scroll;
+  margin-top: 0px;
+  border-style: dotted;
+  border-width: thin;
+  background-color: #fcf6db;
 }
 .swagger-section .swagger-ui-wrap .model-signature .snippet small {
   font-size: 0.75em;
@@ -383,7 +388,7 @@
   padding: 0 0 0 10px;
   border-style: dotted;
   border-width: thin;
-  background-color: #ffffff;
+  background-color: #fcf6db;
 }
 .swagger-section .swagger-ui-wrap .model-signature .description .strong {
   font-weight: bold;
