@@ -383,6 +383,7 @@
   padding: 0 0 0 10px;
   border-style: dotted;
   border-width: thin;
+  background-color: #ffffff;
 }
 .swagger-section .swagger-ui-wrap .model-signature .description .strong {
   font-weight: bold;

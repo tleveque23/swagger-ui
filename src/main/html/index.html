@@ -24,12 +24,25 @@
   <script src='lib/swagger-oauth.js' type='text/javascript'></script>
   <script type="text/javascript">
     $(function () {
-      var url = window.location.search.match(/url=([^&]+)/);
+
+      // un-comment the following section if you want to test with the pet-store json
+      // You also nee to comment the next section
+      /*var url = window.location.search.match(/url=([^&]+)/);
       if (url && url.length > 1) {
         url = url[1];
       } else {
         url = "http://petstore.swagger.wordnik.com/v2/swagger.json";
+      }*/
+
+      // This create the local url to use to fetch the swagger json
+      var url = window.location.protocol + "//" + window.location.host;
+      if (window.location.pathname.indexOf('/api') > 0) {
+        url += window.location.pathname.substring(0, window.location.pathname.indexOf('/api'))
       }
+      url += "/api-docs";
+      log('API URL: ' + url);
+      // End of local url creation
+
       window.swaggerUi = new SwaggerUi({
         url: url,
         dom_id: "swagger-ui-container",
