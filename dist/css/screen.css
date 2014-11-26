@@ -1116,6 +1116,20 @@
 .swagger-section .api-popup-actions {
   padding-top: 10px;
 }
+@font-face {
+  font-family: 'bryantbold';
+  src: url('../fonts/bryanbol-webfont.eot');
+  src: url('../fonts/bryanbol-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bryanbol-webfont.woff') format('woff'), url('../fonts/bryanbol-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bryantregular';
+  src: url('../fonts/bryanreg-webfont.eot');
+  src: url('../fonts/bryanreg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bryanreg-webfont.woff') format('woff'), url('../fonts/bryanreg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .swagger-section .access {
   float: right;
 }
@@ -1181,12 +1195,14 @@
   padding: 14px;
 }
 .swagger-section #header a#logo {
+  font-family: bryantbold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
   background: transparent url(../images/logo_small.png) no-repeat left center;
   padding: 20px 0 20px 40px;
   color: white;
+  margin-left: -14px;
 }
 .swagger-section #header form#api_selector {
   display: block;
